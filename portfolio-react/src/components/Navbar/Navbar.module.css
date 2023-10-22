@@ -1,0 +1,128 @@
+@import "../../vars.css";
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  margin: 0 10%;
+  height: 100px;
+}
+
+.container {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 1.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-text);
+  z-index: 1;
+}
+
+.menu {
+  display: flex;
+  z-index: 1;
+}
+
+.menuItems {
+  display: flex;
+  gap: 47px;
+  list-style: none;
+}
+
+.menuItems a {
+  font-size: 1.4rem;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.menuBtn {
+  display: none;
+  height: 30px;
+  width: 30px;
+}
+
+.leftBlur {
+  position: absolute;
+  width: 30vw;
+  height: 20vw;
+  min-width: 350px;
+  min-width: 350px;
+  top: -128px;
+  left: -20vw;
+  border-radius: 764px;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.rightBlur {
+  position: absolute;
+  width: 30vw;
+  height: 20vw;
+  min-width: 350px;
+  min-width: 250px;
+  top: -128px;
+  right: 0vw;
+  border-radius: 764px;
+  background: rgba(19, 51, 110, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 11px;
+    z-index: 4;
+  }
+
+  .menuBtn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menuItems {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    border-radius: 10px;
+    background: rgb(25, 55, 109);
+    background: linear-gradient(
+      0deg,
+      rgba(25, 54, 109, 0.4) 0%,
+      rgba(25, 55, 109, 1) 100%
+    );
+    padding: 24px 33px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .menuOpen {
+    display: flex;
+    z-index: 4;
+  }
+
+  .leftBlur {
+    display: none;
+  }
+  
+  .rightBlur {
+    display: none;
+  }
+}
