@@ -1,0 +1,146 @@
+/* --------------------------  TYPING EFFECT - h1, h2 - STYLE  --------------------------*/
+
+#introPage h1, #introPage h2 {
+    width: calc(28ch + 28*0.0625em);
+}
+#introPage h1:after, #introPage h2:after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: calc(28ch + 28*0.0625em);
+    height: 2ex;
+    left: 0;
+    top: 0;
+    background: #fff;
+    animation: 0.1s blink 28, move 4s 1.5s forwards steps(1);
+    border-left: 1px solid #000;
+    box-shadow: 0px 1ex 0px 0px #fff;
+}
+@keyframes move {
+    3.5714285714% {
+        width: calc(calc(28ch + 28*0.0625em) - (1ch + 1*0.0625em));
+        left: calc(1ch + 1*0.0625em);
+   }
+    7.1428571429% {
+        width: calc(calc(28ch + 28*0.0625em) - (2ch + 2*0.0625em));
+        left: calc(2ch + 2*0.0625em);
+   }
+    10.7142857143% {
+        width: calc(calc(28ch + 28*0.0625em) - (3ch + 3*0.0625em));
+        left: calc(3ch + 3*0.0625em);
+   }
+    14.2857142857% {
+        width: calc(calc(28ch + 28*0.0625em) - (4ch + 4*0.0625em));
+        left: calc(4ch + 4*0.0625em);
+   }
+    17.8571428571% {
+        width: calc(calc(28ch + 28*0.0625em) - (5ch + 5*0.0625em));
+        left: calc(5ch + 5*0.0625em);
+   }
+    21.4285714286% {
+        width: calc(calc(28ch + 28*0.0625em) - (6ch + 6*0.0625em));
+        left: calc(6ch + 6*0.0625em);
+   }
+    25% {
+        width: calc(calc(28ch + 28*0.0625em) - (7ch + 7*0.0625em));
+        left: calc(7ch + 7*0.0625em);
+   }
+    28.5714285714% {
+        width: calc(calc(28ch + 28*0.0625em) - (8ch + 8*0.0625em));
+        left: calc(8ch + 8*0.0625em);
+   }
+    32.1428571429% {
+        width: calc(calc(28ch + 28*0.0625em) - (9ch + 9*0.0625em));
+        left: calc(9ch + 9*0.0625em);
+   }
+    35.7142857143% {
+        width: calc(calc(28ch + 28*0.0625em) - (10ch + 10*0.0625em));
+        left: calc(10ch + 10*0.0625em);
+   }
+    39.2857142857% {
+        width: calc(calc(28ch + 28*0.0625em) - (11ch + 11*0.0625em));
+        left: calc(11ch + 11*0.0625em);
+   }
+    42.8571428571% {
+        width: calc(calc(28ch + 28*0.0625em) - (12ch + 12*0.0625em));
+        left: calc(12ch + 12*0.0625em);
+   }
+    46.4285714286% {
+        width: calc(calc(28ch + 28*0.0625em) - (13ch + 13*0.0625em));
+        left: calc(13ch + 13*0.0625em);
+   }
+    50% {
+        width: calc(calc(28ch + 28*0.0625em) - (14ch + 14*0.0625em));
+        left: calc(14ch + 14*0.0625em);
+   }
+    53.5714285714% {
+        width: calc(calc(28ch + 28*0.0625em) - (15ch + 15*0.0625em));
+        left: calc(15ch + 15*0.0625em);
+   }
+    57.1428571429% {
+        width: calc(calc(28ch + 28*0.0625em) - (16ch + 16*0.0625em));
+        left: calc(16ch + 16*0.0625em);
+   }
+    60.7142857143% {
+        width: calc(calc(28ch + 28*0.0625em) - (17ch + 17*0.0625em));
+        left: calc(17ch + 17*0.0625em);
+   }
+    64.2857142857% {
+        width: calc(calc(28ch + 28*0.0625em) - (18ch + 18*0.0625em));
+        left: calc(18ch + 18*0.0625em);
+   }
+    67.8571428571% {
+        width: calc(calc(28ch + 28*0.0625em) - (19ch + 19*0.0625em));
+        left: calc(19ch + 19*0.0625em);
+   }
+    71.4285714286% {
+        width: calc(calc(28ch + 28*0.0625em) - (20ch + 20*0.0625em));
+        left: calc(20ch + 20*0.0625em);
+   }
+    75% {
+        width: calc(calc(28ch + 28*0.0625em) - (21ch + 21*0.0625em));
+        left: calc(21ch + 21*0.0625em);
+   }
+    78.5714285714% {
+        width: calc(calc(28ch + 28*0.0625em) - (22ch + 22*0.0625em));
+        left: calc(22ch + 22*0.0625em);
+   }
+    82.1428571429% {
+        width: calc(calc(28ch + 28*0.0625em) - (23ch + 23*0.0625em));
+        left: calc(23ch + 23*0.0625em);
+   }
+    85.7142857143% {
+        width: calc(calc(28ch + 28*0.0625em) - (24ch + 24*0.0625em));
+        left: calc(24ch + 24*0.0625em);
+   }
+    89.2857142857% {
+        width: calc(calc(28ch + 28*0.0625em) - (25ch + 25*0.0625em));
+        left: calc(25ch + 25*0.0625em);
+   }
+    92.8571428571% {
+        width: calc(calc(28ch + 28*0.0625em) - (26ch + 26*0.0625em));
+        left: calc(26ch + 26*0.0625em);
+   }
+    96.4285714286% {
+        width: calc(calc(28ch + 28*0.0625em) - (27ch + 27*0.0625em));
+        left: calc(27ch + 27*0.0625em);
+   }
+    100% {
+        width: calc(calc(28ch + 28*0.0625em) - (28ch + 28*0.0625em));
+        left: calc(28ch + 28*0.0625em);
+   }
+}
+@keyframes blink {
+    0% {
+        border-left-color: #000;
+   }
+    50% {
+        border-left-color: #000;
+   }
+    51% {
+        border-left-color: #fff;
+   }
+    100% {
+        border-left-color: #fff;
+   }
+}

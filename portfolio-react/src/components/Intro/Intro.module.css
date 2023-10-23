@@ -3,7 +3,7 @@
 .intro {
   position: relative;
   height: calc(100vh - 100px);
-  z-index: 3;
+  z-index: 1;
   background-color: white;
   background-image: url("../../../assets/intro/eu_formal.png");
   background-size: contain;
@@ -12,7 +12,7 @@
   background-attachment: scroll;
 }
 
-#introPage {
+.introPage {
   height: 100%;
   width: 80vw;
   display: flex;
@@ -24,7 +24,7 @@
   /* position: fixed; */
 }
 
-#introPage h1,
+.introPage h1,
 h2 {
   position: relative;
   color: #000000;
@@ -33,14 +33,13 @@ h2 {
   font-family: "Courier New", Courier, monospace;
 }
 
-#introPage h1 {
+.introPage h1 {
   font-size: 2.5em;
 }
 
-#introPage h2 {
+.introPage h2 {
   font-size: 1.5em;
   margin-left: 6px;
-  z-index: 5;
 }
 
 /* ----- BOTTOM OVAL BOX - STYLE -----*/
@@ -52,7 +51,7 @@ h2 {
   border-radius: 50%;
   margin-top: -8vh;
   position: absolute;
-  z-index: 4;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,31 +88,37 @@ h2 {
 /* ------------------------------------- */
 
 @media screen and (max-width: 1090px) {
-  #introPage {
+  .introPage {
     font-size: 12px;
   }
 }
 
 @media screen and (max-width: 830px) {
-  .intro {
+  /* .intro {
     z-index: auto;
-  }
+  } */
 
-  #introPage {
+  .introPage {
     font-size: 10px;
     align-items: start;
   }
 
-  #introPage h1 {
+  .introPage h1 {
     padding-top: 20px;
   }
 }
 
 @media screen and (max-width: 430px) {
-  #introPage {
-    font-size: 6px;
+  .introPage {
+    font-size: 8px;
   }
   #oval {
     margin-top: -14vh;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .introPage {
+    font-size: 6px;
   }
 }

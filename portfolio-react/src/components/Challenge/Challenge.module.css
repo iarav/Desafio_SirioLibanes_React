@@ -1,0 +1,145 @@
+.challenge {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  min-height: 80vh;
+  border-radius: 20px;
+  background: rgba(0, 166, 235, 0.68);
+  padding: 50px;
+  display: block;
+  position: relative;
+  display: flex;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+
+.ballonImg{
+    width: 100%;
+    margin-left: -50px;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.ballon{
+    text-wrap: wrap;
+    position: relative;
+    height: 235px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ballonImg img, .ballon{
+    width: 430px;
+}
+
+.ballonImg img{
+    position: absolute;
+}
+
+.ballonImg p{
+    width: 80%;
+    margin-top: 25px;
+    font-size: 1.2rem;
+}
+
+.column1{
+    display: flex;
+    flex-direction: column;
+}
+
+.questionsBalls{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.questionBall{
+    position: relative;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.questionBall:hover {
+    cursor: pointer;
+}
+
+.questionBall img {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.questionBall p {
+    z-index: 2;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 930px) {
+    .ballonImg img{
+        display: none;
+    }
+    .ballonImg{
+        width: 100%;
+        margin-left: 0px;
+        position: relative;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+    .ballon{
+        width: auto;
+        height: auto;
+        border: 3px solid var(--color-bg);
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 15px 0;
+    }
+
+    .ballon p{
+        margin-top: 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .questionsBalls{
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+    }
+
+    .questionBall{
+        margin-right: 10px;
+    }
+}
+
+

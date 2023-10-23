@@ -1,0 +1,32 @@
+[
+  {
+    "title": "JavaScript",
+    "imageSrc": "skills/javascript.svg",
+    "level": "Avançado"
+  },
+  {
+    "title": "Java",
+    "imageSrc": "skills/java.png",
+    "level": "Avançado"
+  },
+  {
+    "title": "PostgreSQL",
+    "imageSrc": "skills/postgresql.png",
+    "level": "Avançado"
+  },
+  {
+    "title": "VueJS",
+    "imageSrc": "skills/vue.png",
+    "level": "Intermediário"
+  },
+  {
+    "title": "Spring",
+    "imageSrc": "skills/spring.png",
+    "level": "Avançado"
+  },
+  {
+    "title": "HTML",
+    "imageSrc": "skills/html.png",
+    "level": "Avançado"
+  }
+]

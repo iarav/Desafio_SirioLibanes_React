@@ -22,12 +22,10 @@
   font-weight: 600;
   text-decoration: none;
   color: var(--color-text);
-  z-index: 1;
 }
 
 .menu {
   display: flex;
-  z-index: 1;
 }
 
 .menuItems {
@@ -40,6 +38,10 @@
   font-size: 1.4rem;
   color: var(--color-text);
   text-decoration: none;
+}
+
+.menuItems a:hover {
+  color: #e9e9e9cb;
 }
 
 .menuBtn {
@@ -59,7 +61,6 @@
   border-radius: 764px;
   background: rgba(25, 55, 109, 0.7);
   filter: blur(100px);
-  z-index: 0;
 }
 
 .rightBlur {
@@ -73,7 +74,6 @@
   border-radius: 764px;
   background: rgba(19, 51, 110, 0.7);
   filter: blur(100px);
-  z-index: 0;
 }
 
 @media screen and (max-width: 830px) {
@@ -89,7 +89,6 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 11px;
-    z-index: 4;
   }
 
   .menuBtn {
@@ -115,7 +114,6 @@
 
   .menuOpen {
     display: flex;
-    z-index: 4;
   }
 
   .leftBlur {
