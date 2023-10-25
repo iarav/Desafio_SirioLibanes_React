@@ -99,6 +99,33 @@
     font-size: 1.3rem;
 }
 
+.answer{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 250px;
+    left: 0;
+    margin-top: 20px;
+}
+
+.answer img{
+    width: 250px;
+}
+
+.question2{
+    display: flex;
+    height: fit-content;
+}
+
+.memoryAndPeriodicTable{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
 @media screen and (max-width: 930px) {
     .ballonImg img{
         display: none;
@@ -139,6 +166,29 @@
 
     .questionBall{
         margin-right: 10px;
+    }
+
+    .answer{
+        position: relative;
+        top: 0;
+        margin-top: 20px;
+    }
+    
+    .answer img{
+        width: 250px;
+    }
+    
+    .question2{
+        flex-direction: column;
+    }
+    
+    .memoryAndPeriodicTable{
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .memoryAndPeriodicTable img{
+        margin-top: 30px;
     }
 }
 

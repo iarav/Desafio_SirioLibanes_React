@@ -45,7 +45,32 @@ export const Challenge = () => {
           </div>
           <div className={styles.circlesQuestions}></div>
         </div>
+        <div className={styles.answer}>{getAnswer(questionNumber)}</div>
       </div>
     </div>
   );
 };
+
+function getAnswer(question) {
+  return question == 1 ? (
+    <div className={styles.question1}>
+      <img src={getImageUrl("challenge/AAATU.png")} alt="Logo_AAATU" />
+    </div>
+  ) : (
+    <div className={styles.question2}>
+      <div>
+        <img
+          src={getImageUrl("challenge/DU_PAULINHO.png")}
+          alt="Logo_churrascaria"
+        />
+      </div>
+      <div className={styles.memoryAndPeriodicTable}>
+        <img
+          src={getImageUrl("challenge/tabela_periodica.png")}
+          alt="tabela_periodica"
+        />
+        <img src={getImageUrl("challenge/jogoMemoria.png")} alt="jogoMemoria" />
+      </div>
+    </div>
+  );
+}
