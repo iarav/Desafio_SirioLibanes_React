@@ -1,0 +1,61 @@
+.question1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.title {
+  color: #fff;
+  font-family: Outfit;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#tranformar {
+  font-size: 3.5rem;
+}
+
+.circle {
+  width: fit-content;
+  position: relative;
+  /* margin: -30px 0; */
+}
+
+.girl {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-color: rgba(168, 224, 252, 0.76);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 70px;
+}
+
+.girl img {
+  height: 250px;
+}
+
+.circleWords {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  animation: spin 25s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

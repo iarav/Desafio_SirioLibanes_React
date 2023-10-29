@@ -1,0 +1,55 @@
+.question2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.title {
+  color: #fff;
+  font-family: Outfit;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.imgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pcMemory {
+  margin-right: -130px;
+}
+
+#pcPeriodic {
+  margin-left: -130px;
+}
+
+#app {
+  z-index: 2;
+  position: relative;
+}
+
+@media screen and (max-width: 830px) {
+  .imgs {
+    flex-direction: column;
+  }
+
+  .imgs img{
+    margin-top: 30px;
+  }
+
+  #pcMemory {
+    margin-right: 0px;
+  }
+  
+  #pcPeriodic {
+    margin-left: 0px;
+  }
+}

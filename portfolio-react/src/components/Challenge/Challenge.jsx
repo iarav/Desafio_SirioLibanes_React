@@ -3,14 +3,38 @@ import React, { useState } from "react";
 import styles from "./Challenge.module.css";
 import { getImageUrl } from "../../utils";
 import questions from "../../data/challengeQuestions.json";
+import { Question1 } from "./Question1";
+import { Question2 } from "./Question2";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+
+const boxVariant = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
+  hidden: { opacity: 0, scale: 0, transition: { duration: 1 } },
+};
 
 export const Challenge = () => {
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
   const [questionNumber, setQuestion] = useState(1);
   return (
     <div className={styles.challenge} id="challenge">
       <div className={styles.container}>
-        <div className={styles.column1}>
-          <h2 className={styles.title}>Desafio</h2>
+        <motion.div
+          ref={ref}
+          variants={boxVariant}
+          initial="hidden"
+          animate={control}
+        >
           <div className={styles.questionsBalls}>
             {questions.map((question, id) => {
               return (
@@ -32,45 +56,11 @@ export const Challenge = () => {
               );
             })}
           </div>
+        </motion.div>
+        <div className="content">
+          {questionNumber == 1 ? <Question1 /> : <Question2 />}
         </div>
-        <div className={styles.content}>
-          <div className={styles.ballonImg}>
-            <div className={styles.ballon}>
-              <img
-                src={getImageUrl("challenge/ballon.png")}
-                alt="balão de pergunta"
-              />
-              <p>{questions[questionNumber - 1].question}</p>
-            </div>
-          </div>
-          <div className={styles.circlesQuestions}></div>
-        </div>
-        <div className={styles.answer}>{getAnswer(questionNumber)}</div>
       </div>
     </div>
   );
 };
-
-function getAnswer(question) {
-  return question == 1 ? (
-    <div className={styles.question1}>
-      <img src={getImageUrl("challenge/AAATU.png")} alt="Logo_AAATU" />
-    </div>
-  ) : (
-    <div className={styles.question2}>
-      <div>
-        <img
-          src={getImageUrl("challenge/DU_PAULINHO.png")}
-          alt="Logo_churrascaria"
-        />
-      </div>
-      <div className={styles.memoryAndPeriodicTable}>
-        <img
-          src={getImageUrl("challenge/tabela_periodica.png")}
-          alt="tabela_periodica"
-        />
-        <img src={getImageUrl("challenge/jogoMemoria.png")} alt="jogoMemoria" />
-      </div>
-    </div>
-  );
-}

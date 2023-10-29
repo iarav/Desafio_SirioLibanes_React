@@ -9,37 +9,11 @@ export const Navbar = () => {
     <div>
       <nav className={styles.navbar}>
         <div className={styles.container}>
-          <a className={styles.title} href="/">
-            Portfólio
-          </a>
-          <div className={styles.menu}>
-            <img
-              className={styles.menuBtn}
-              src={
-                menuOpen
-                  ? getImageUrl("nav/closeIcon.png")
-                  : getImageUrl("nav/menuIcon.png")
-              }
-              alt="menu-button"
-              onClick={() => setMenuOpen(!menuOpen)}
-            />
-            <ul
-              className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
-              onClick={() => setMenuOpen(false)}
-            >
-              <li>
-                <a href="#about">Sobre mim</a>
-              </li>
-              <li>
-                <a href="#challenge">Desafio</a>
-              </li>
-              <li>
-                <a href="#experience">Experiências</a>
-              </li>
-              <li>
-                <a href="#contact">Contato</a>
-              </li>
-            </ul>
+          <div className={styles.title}>
+            Desafio
+          </div>
+          <div className={styles.title}>
+            <img src={getImageUrl("nav/logo_sirio.png")} alt="Logo Alma Sírio Libanes" />
           </div>
         </div>
       </nav>
