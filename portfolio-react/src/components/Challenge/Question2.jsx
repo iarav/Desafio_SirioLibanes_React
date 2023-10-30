@@ -51,6 +51,8 @@ const paths = [
 export const Question2 = () => {
   const control = useAnimation();
   const [ref, inView] = useInView();
+  const control2 = useAnimation();
+  const [ref2, inView2] = useInView();
 
   useEffect(() => {
     if (inView) {
@@ -58,7 +60,13 @@ export const Question2 = () => {
     } else {
       control.start("hidden");
     }
-  }, [control, inView]);
+
+    if (inView2) {
+      control2.start("visible");
+    } else {
+      control2.start("hidden");
+    }
+  }, [control, inView, control2, inView2]);
 
   return (
     <div className={styles.question2}>
@@ -88,10 +96,10 @@ export const Question2 = () => {
         />
 
         <motion.div
-          ref={ref}
+          ref={ref2}
           variants={window.innerWidth>830 ? boxVariantPcPeriodic : boxVariantPhoneView}
           initial="hidden"
-          animate={control}
+          animate={control2}
         >
           <img
             src={paths[2].path}

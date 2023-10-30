@@ -12,7 +12,7 @@ let boxVariantQuestion1 = {
     transition: { duration: 1.2 },
   },
   hidden: {
-    x: "-" + (window.innerWidth/2) + "px",
+    x: "-" + (window.innerWidth/3) + "px",
     transition: { duration: 0.5 },
   },
 };
@@ -23,7 +23,7 @@ let boxVariantQuestion2 = {
     transition: { duration: 1.4 },
   },
   hidden: {
-    x: "-" + ((window.innerWidth/2) + 100) + "px",
+    x: "-" + ((window.innerWidth/3) + 100) + "px",
     transition: { duration: 0.5 },
   },
 };
