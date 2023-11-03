@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "flubber": "^0.4.2",
     "framer-motion": "^10.16.4",
     "prop-types": "^15.8.1",
     "react-intersection-observer": "^9.5.2"
