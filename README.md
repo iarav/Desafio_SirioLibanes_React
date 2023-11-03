@@ -1,8 +1,13 @@
 # Iara Vaneti - Desafio
 Um website criado em ReactJS para o processo seletivo no Sírio-Libanes.
 
+<br>
+
 ## Para acessar o site, acesse: 
-### bit.ly/iara-desafio
+<html>
+  <h3><a href="bit.ly/iara-desafio" target="_blank">bit.ly/iara-desafio</a></h3>
+  <br>
+</html>
 
 ## Passo a passo de instalação e utilização:
 
