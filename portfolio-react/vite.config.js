@@ -8,5 +8,9 @@ export default defineConfig({
     modules: {
       localsConvention: "camelCase"
     },
-  }
+  },
+  build: {
+    outDir: 'dist', 
+  },
+  base: "/Desafio_SirioLibanes_React",
 })
