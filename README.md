@@ -5,7 +5,7 @@ Um website criado em ReactJS para o processo seletivo no Sírio-Libanes.
 
 ## Para acessar o site, acesse: 
 <html>
-  <h3><a href="bit.ly/iara-desafio" target="_blank">bit.ly/iara-desafio</a></h3>
+  <h3><a href="https://iarav.github.io/Desafio_SirioLibanes_React/" target="_blank">bit.ly/iara-desafio</a></h3>
   <br>
 </html>
 
