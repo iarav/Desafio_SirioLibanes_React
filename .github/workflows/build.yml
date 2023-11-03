@@ -16,6 +16,8 @@ jobs:
       - name: Build web-app
         run: |
           rm -rf node_modules
+          npm cache clean --force
+          npm install -g npm@latest
           npm ci
           npm run build
       - name: Deploy to gh-pages
